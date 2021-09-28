@@ -1,0 +1,90 @@
+/* CSS RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+:root {
+    --primary-color: rgb(163, 21, 163);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: url(../img/bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.container h1 {
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container .registration_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.container .registration_form div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container .registration_form input {
+    background: transparent;
+    color: #fff;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 2px solid rgb(163, 21, 163);
+    padding: 5px 5px;
+}
+
+.container .registration_form div button {
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid var(--primary-color);
+    width: 90%;
+    margin-top: 25px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+    color: #fff;
+    background: #555;
+    opacity: 0.5;
+    cursor: pointer;
+}
